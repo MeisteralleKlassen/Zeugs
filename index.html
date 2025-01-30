@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PWA Example</title>
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#317EFB"/>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js')
-                .then(reg => console.log('Service Worker Registered', reg))
-                .catch(err => console.log('Service Worker Registration Failed', err));
-        }
-    </script>
+    <title>Simple HTML Site</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        button { padding: 10px 20px; font-size: 16px; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My PWA</h1>
-    <p>This is a simple Progressive Web App example.</p>
-    <button onclick="alert('PWA Button Clicked!')">Click Me</button>
+    <h1>Welcome to My Simple Website</h1>
+    <p>This is a basic HTML webpage with minimal styling.</p>
 </body>
 </html>
+
